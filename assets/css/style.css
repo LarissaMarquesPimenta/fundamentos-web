@@ -113,8 +113,8 @@ nav a:hover {
 
 .secondary {
     background-color: var(--brown-400);
-    padding: 2rem 2rem;
-    border-radius: 8px;
+    padding: 1rem 15rem;
+    border-radius: 1px;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -188,6 +188,7 @@ width: 80%;
 margin: 0 auto;
 display: block;
 aspect-ratio: 16/9;
+padding: 10px;
 }
 
 footer {
@@ -206,6 +207,14 @@ border-top: 2px solid var(--brown-900);
 .contato {
     gap: 2rem;
 }
+
 }
+
+.tm-redescontato{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
 
 
