@@ -4,6 +4,9 @@ let email = document.querySelector('#email')
 
 let assunto = document.querySelector('#assunto')
 
+let nomeOk = false
+let emailOk = false
+let assuntoOk = false
 
 function validaNome() {
 let txtNome = document.querySelector('#txtNome')
@@ -16,7 +19,7 @@ if(nome.value.length < 2) {
 } else {
     txtNome.innerHTML = 'Nome valido!'
     txtNome.style.color = 'green'
-    nome.style.border='3px solid green'
+    nome.style.border='none'
 }
 
 }
@@ -24,9 +27,17 @@ if(nome.value.length < 2) {
 function validaEmail() {
     let txtEmail = document.querySelector('#txtEmail')
 
-    if (email.value.indexOf('@') == -1)
+    if (email.value.indexOf('@') == -1) {
     txtEmail.innerHTML = 'Email invalido!'
     txtEmail.style.color = 'red'
+    email.style.border='3px solid red'
+}
+    else {
+        txtEmail.innerHTML = 'Email valido!'
+        txtEmail.style.color = 'green'
+        emailOk = true
+        email.style.border= 'none'
+    }
 }
 
 function validaAssunto() {
@@ -41,6 +52,7 @@ function validaAssunto() {
         txtAssunto.innerHTML = 'Assunto valido!'
         txtAssunto.style.color = 'green'
         assunto.style.border='3px solid green'
+        assuntoOk = true
     }
     
     }
