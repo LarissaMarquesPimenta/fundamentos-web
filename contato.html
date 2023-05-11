@@ -29,11 +29,13 @@
         <br>
         <br>
         <label for="email">Email: </label> <br>
-        <input type="text" id="email">
+        <input type="text" id="email" onkeyup="validaEmail()">
+        <div id = "txtEmail"></div>
         <br>
         <br>
         <label for="assunto">Assunto: </label> <br>
-        <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
+        <textarea name="assunto" id="assunto" onkeyup="validaAssunto()" cols="30" rows="5"></textarea>
+        <div id="txtAssunto"></div>
         <br>
         <br>
         <button onclick="olaMundo()">Enviar</button>
