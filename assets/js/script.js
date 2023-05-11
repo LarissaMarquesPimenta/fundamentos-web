@@ -57,6 +57,12 @@ function validaAssunto() {
     
     }
 
-function olaMundo() {
-    alert('Clicou no botão')
+function enviar() {
+    if (nomeOk == true && emailOk == true &&  assuntoOk == true) {
+        alert ('Formulario enviado com sucesso!')
+    } else {
+        alert('Preencha corretamente antes de enviar')
+    }
+
 }
+
